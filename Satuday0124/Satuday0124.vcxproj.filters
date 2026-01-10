@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="directx">
+      <UniqueIdentifier>{edaaec17-beff-419b-b576-46b1a0a45aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="draw_resource">
+      <UniqueIdentifier>{ad95a022-4bb0-4597-8565-14a4359a6176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entry">
+      <UniqueIdentifier>{a1943f5e-efb2-44f1-b8aa-4aa047cfffbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object">
+      <UniqueIdentifier>{bced30ab-636a-426c-b6e1-f5769478d3d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="window">
+      <UniqueIdentifier>{e8610c83-fdd9-4113-b652-fc4272daf7e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="util.h" />
+  </ItemGroup>
+</Project>
