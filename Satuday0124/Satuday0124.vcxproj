@@ -22,6 +22,8 @@
     <ClCompile Include="command_allocator.cpp" />
     <ClCompile Include="command_list.cpp" />
     <ClCompile Include="command_queue.cpp" />
+    <ClCompile Include="constant_buffer.cpp" />
+    <ClCompile Include="depth_buffer.cpp" />
     <ClCompile Include="descriptor_heap.cpp" />
     <ClCompile Include="device.cpp" />
     <ClCompile Include="DXGI.cpp" />
@@ -39,6 +41,8 @@
     <ClInclude Include="command_allocator.h" />
     <ClInclude Include="command_list.h" />
     <ClInclude Include="command_queue.h" />
+    <ClInclude Include="constant_buffer.h" />
+    <ClInclude Include="depth_buffer.h" />
     <ClInclude Include="descriptor_heap.h" />
     <ClInclude Include="device.h" />
     <ClInclude Include="DXGI.h" />
@@ -54,6 +58,16 @@
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="shader.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="VertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>

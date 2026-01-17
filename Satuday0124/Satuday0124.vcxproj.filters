@@ -63,6 +63,12 @@
     <ClCompile Include="entry.cpp">
       <Filter>entry</Filter>
     </ClCompile>
+    <ClCompile Include="constant_buffer.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="depth_buffer.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="window.h">
@@ -110,9 +116,18 @@
     <ClInclude Include="entry.h">
       <Filter>entry</Filter>
     </ClInclude>
+    <ClInclude Include="constant_buffer.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="depth_buffer.h">
+      <Filter>directx</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="shader.hlsl">
+      <Filter>directx</Filter>
+    </FxCompile>
+    <FxCompile Include="VertexShader.hlsl">
       <Filter>directx</Filter>
     </FxCompile>
   </ItemGroup>
