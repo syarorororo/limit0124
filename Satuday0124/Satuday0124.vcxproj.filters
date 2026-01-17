@@ -18,6 +18,102 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="util.h" />
+    <ClCompile Include="window.cpp">
+      <Filter>window</Filter>
+    </ClCompile>
+    <ClCompile Include="command_allocator.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="command_list.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="command_queue.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="descriptor_heap.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="device.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="DXGI.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="fence.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="pipline_state_object.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="render_target.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="root_signature.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="swap_chain.cpp">
+      <Filter>directx</Filter>
+    </ClCompile>
+    <ClCompile Include="triangle_polygon.cpp">
+      <Filter>draw_resource</Filter>
+    </ClCompile>
+    <ClCompile Include="entry.cpp">
+      <Filter>entry</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="window.h">
+      <Filter>window</Filter>
+    </ClInclude>
+    <ClInclude Include="command_allocator.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="command_list.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="command_queue.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="descriptor_heap.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="device.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="DXGI.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="fence.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="pipline_state_object.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="render_target.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="root_signature.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="swap_chain.h">
+      <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="triangle_polygon.h">
+      <Filter>draw_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="entry.h">
+      <Filter>entry</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shader.hlsl">
+      <Filter>directx</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>

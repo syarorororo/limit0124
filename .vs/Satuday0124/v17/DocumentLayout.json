@@ -1,10 +1,130 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ktc\\Desktop\\0110\\Satuday0124\\",
+  "WorkspaceRootPath": "C:\\Users\\ktc\\Desktop\\0124\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0110\\Satuday0124\\Satuday0124\\util.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\util.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\shader.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\shader.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\render_target.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\render_target.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\render_target.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\render_target.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\command_list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\entry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\entry.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\pipline_state_object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\pipline_state_object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\pipline_state_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\pipline_state_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\DXGI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\DXGI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\fence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\fence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\fence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\fence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\root_signature.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\root_signature.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\root_signature.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\root_signature.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\swap_chain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\swap_chain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\swap_chain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\swap_chain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\triangle_polygon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\triangle_polygon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\triangle_polygon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\triangle_polygon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\command_list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\entry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\entry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_allocator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\command_allocator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_allocator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\command_allocator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\command_queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\command_queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\descriptor_heap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\descriptor_heap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\descriptor_heap.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\descriptor_heap.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\device.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\device.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\device.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\device.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\DXGI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6A0FF26-4E3A-4EE5-ACA6-83436FACF359}|Satuday0124\\Satuday0124.vcxproj|solutionrelative:Satuday0124\\DXGI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,27 +134,409 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "render_target.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\render_target.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\render_target.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\render_target.cpp",
+              "RelativeToolTip": "Satuday0124\\render_target.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:55:02.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "util.h",
-              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0110\\Satuday0124\\Satuday0124\\util.h",
-              "RelativeDocumentMoniker": "Satuday0124\\util.h",
-              "ToolTip": "C:\\Users\\ktc\\Desktop\\0110\\Satuday0124\\Satuday0124\\util.h",
-              "RelativeToolTip": "Satuday0124\\util.h",
+              "Title": "shader.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\shader.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\shader.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\shader.cpp",
+              "RelativeToolTip": "Satuday0124\\shader.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:56:56.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "shader.hlsl",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\shader.hlsl",
+              "RelativeDocumentMoniker": "Satuday0124\\shader.hlsl",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\shader.hlsl",
+              "RelativeToolTip": "Satuday0124\\shader.hlsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-01-17T07:46:38.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "pipline_state_object.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\pipline_state_object.h",
+              "RelativeDocumentMoniker": "Satuday0124\\pipline_state_object.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\pipline_state_object.h",
+              "RelativeToolTip": "Satuday0124\\pipline_state_object.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:53:22.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "pipline_state_object.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\pipline_state_object.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\pipline_state_object.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\pipline_state_object.cpp",
+              "RelativeToolTip": "Satuday0124\\pipline_state_object.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:54:05.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "entry.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\entry.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\entry.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\entry.cpp",
+              "RelativeToolTip": "Satuday0124\\entry.cpp",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAwwL8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T07:03:03.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "command_list.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_list.h",
+              "RelativeDocumentMoniker": "Satuday0124\\command_list.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_list.h",
+              "RelativeToolTip": "Satuday0124\\command_list.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:47:09.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "shader.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\shader.h",
+              "RelativeDocumentMoniker": "Satuday0124\\shader.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\shader.h",
+              "RelativeToolTip": "Satuday0124\\shader.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:58:13.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "render_target.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\render_target.h",
+              "RelativeDocumentMoniker": "Satuday0124\\render_target.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\render_target.h",
+              "RelativeToolTip": "Satuday0124\\render_target.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:55:30.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DXGI.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\DXGI.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\DXGI.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\DXGI.cpp",
+              "RelativeToolTip": "Satuday0124\\DXGI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:52:04.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "fence.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\fence.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\fence.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\fence.cpp",
+              "RelativeToolTip": "Satuday0124\\fence.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAArwBgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:52:28.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "root_signature.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\root_signature.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\root_signature.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\root_signature.cpp",
+              "RelativeToolTip": "Satuday0124\\root_signature.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:56:03.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "root_signature.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\root_signature.h",
+              "RelativeDocumentMoniker": "Satuday0124\\root_signature.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\root_signature.h",
+              "RelativeToolTip": "Satuday0124\\root_signature.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:56:23.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "fence.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\fence.h",
+              "RelativeDocumentMoniker": "Satuday0124\\fence.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\fence.h",
+              "RelativeToolTip": "Satuday0124\\fence.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:52:39.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "swap_chain.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\swap_chain.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\swap_chain.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\swap_chain.cpp",
+              "RelativeToolTip": "Satuday0124\\swap_chain.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T07:00:10.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "swap_chain.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\swap_chain.h",
+              "RelativeDocumentMoniker": "Satuday0124\\swap_chain.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\swap_chain.h",
+              "RelativeToolTip": "Satuday0124\\swap_chain.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:59:50.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "triangle_polygon.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\triangle_polygon.h",
+              "RelativeDocumentMoniker": "Satuday0124\\triangle_polygon.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\triangle_polygon.h",
+              "RelativeToolTip": "Satuday0124\\triangle_polygon.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T07:01:42.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "triangle_polygon.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\triangle_polygon.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\triangle_polygon.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\triangle_polygon.cpp",
+              "RelativeToolTip": "Satuday0124\\triangle_polygon.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T07:02:18.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "window.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\window.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\window.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\window.cpp",
+              "RelativeToolTip": "Satuday0124\\window.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:44:05.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "window.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\window.h",
+              "RelativeDocumentMoniker": "Satuday0124\\window.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\window.h",
+              "RelativeToolTip": "Satuday0124\\window.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:44:22.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "command_list.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_list.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\command_list.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_list.cpp",
+              "RelativeToolTip": "Satuday0124\\command_list.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:46:44.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "entry.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\entry.h",
+              "RelativeDocumentMoniker": "Satuday0124\\entry.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\entry.h",
+              "RelativeToolTip": "Satuday0124\\entry.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-10T08:59:37.376Z",
+              "WhenOpened": "2026-01-17T07:02:46.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "command_allocator.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_allocator.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\command_allocator.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_allocator.cpp",
+              "RelativeToolTip": "Satuday0124\\command_allocator.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:46:10.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "command_allocator.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_allocator.h",
+              "RelativeDocumentMoniker": "Satuday0124\\command_allocator.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_allocator.h",
+              "RelativeToolTip": "Satuday0124\\command_allocator.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:45:43.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "command_queue.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_queue.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\command_queue.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_queue.cpp",
+              "RelativeToolTip": "Satuday0124\\command_queue.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:47:57.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "command_queue.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_queue.h",
+              "RelativeDocumentMoniker": "Satuday0124\\command_queue.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\command_queue.h",
+              "RelativeToolTip": "Satuday0124\\command_queue.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:47:41.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "descriptor_heap.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\descriptor_heap.h",
+              "RelativeDocumentMoniker": "Satuday0124\\descriptor_heap.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\descriptor_heap.h",
+              "RelativeToolTip": "Satuday0124\\descriptor_heap.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:49:59.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "descriptor_heap.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\descriptor_heap.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\descriptor_heap.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\descriptor_heap.cpp",
+              "RelativeToolTip": "Satuday0124\\descriptor_heap.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:49:31.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "device.cpp",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\device.cpp",
+              "RelativeDocumentMoniker": "Satuday0124\\device.cpp",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\device.cpp",
+              "RelativeToolTip": "Satuday0124\\device.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-17T06:51:14.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "device.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\device.h",
+              "RelativeDocumentMoniker": "Satuday0124\\device.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\device.h",
+              "RelativeToolTip": "Satuday0124\\device.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:51:27.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DXGI.h",
+              "DocumentMoniker": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\DXGI.h",
+              "RelativeDocumentMoniker": "Satuday0124\\DXGI.h",
+              "ToolTip": "C:\\Users\\ktc\\Desktop\\0124\\Satuday0124\\DXGI.h",
+              "RelativeToolTip": "Satuday0124\\DXGI.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-17T06:51:47.549Z",
               "EditorCaption": ""
             }
           ]

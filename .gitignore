@@ -39,3 +39,11 @@
 
 # debug information files
 *.dwo
+
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.db
+*.opendb

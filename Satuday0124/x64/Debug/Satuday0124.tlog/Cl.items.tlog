@@ -1,0 +1,15 @@
+C:\Users\ktc\Desktop\0124\Satuday0124\command_allocator.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\command_allocator.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\command_list.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\command_list.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\command_queue.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\command_queue.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\descriptor_heap.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\descriptor_heap.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\device.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\device.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\DXGI.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\DXGI.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\entry.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\entry.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\fence.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\fence.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\pipline_state_object.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\pipline_state_object.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\render_target.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\render_target.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\root_signature.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\root_signature.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\shader.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\shader.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\swap_chain.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\swap_chain.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\triangle_polygon.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\triangle_polygon.obj
+C:\Users\ktc\Desktop\0124\Satuday0124\window.cpp;C:\Users\ktc\Desktop\0124\Satuday0124\x64\Debug\window.obj
