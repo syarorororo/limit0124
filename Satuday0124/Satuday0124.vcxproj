@@ -54,6 +54,7 @@
     <ClInclude Include="shader.h" />
     <ClInclude Include="swap_chain.h" />
     <ClInclude Include="triangle_polygon.h" />
+    <ClInclude Include="util.h" />
     <ClInclude Include="window.h" />
   </ItemGroup>
   <ItemGroup>

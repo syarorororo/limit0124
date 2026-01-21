@@ -122,6 +122,9 @@
     <ClInclude Include="depth_buffer.h">
       <Filter>directx</Filter>
     </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>directx</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="shader.hlsl">
