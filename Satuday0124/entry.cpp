@@ -5,6 +5,8 @@
 #include "command_list.h"
 #include "command_queue.h"
 #include "swap_chain.h"
+#include"depth_buffer.h"
+#include"constant_buffer.h"
 #include "descriptor_heap.h"
 #include "render_target.h"
 #include "fence.h"
@@ -20,77 +22,73 @@ public:
     ~Application() = default;
 
     [[nodiscard]] bool initialize(HINSTANCE instance) noexcept {
-
-        if (S_OK != windowInstance_.create(instance, 1280, 720, "MyApp")) {
+        if (S_OK != Window::instance().create(instance, 1280, 720, "MyApp")) {
             assert(false && "ウィンドウの生成に失敗しました");
             return false;
         }
 
-        if (!dxgiInstance_.setDisplayAdapter()) {
-            assert(false && "DXGIのアダプタ設定に失敗しました");
-            return false;
-        }
-
-        if (!deviceInstance_.create(dxgiInstance_)) {
+        if (!Device::instance().create()) {
             assert(false && "デバイスの作成に失敗しました");
             return false;
         }
 
-        if (!commandQueueInstance_.create(deviceInstance_)) {
+        if (!commandQueueInstance_.create()) {
             assert(false && "コマンドキューの作成に失敗しました");
             return false;
         }
 
-        if (!swapChainInstance_.create(dxgiInstance_, windowInstance_, commandQueueInstance_)) {
+        if (!swapChainInstance_.create(commandQueueInstance_)) {
             assert(false && "スワップチェインの作成に失敗しました");
             return false;
         }
 
-        if (!descriptorHeapInstance_.create(deviceInstance_, D3D12_DESCRIPTOR_HEAP_TYPE_RTV, swapChainInstance_.getDesc().BufferCount)) {
+        if (!DescriptorHeapContainer::instance().create(D3D12_DESCRIPTOR_HEAP_TYPE_RTV, swapChainInstance_.getDesc().BufferCount)) {
             assert(false && "ディスクリプタヒープの作成に失敗しました");
             return false;
         }
-
-        if (!renderTargetInstance_.createBackBuffer(deviceInstance_, swapChainInstance_, descriptorHeapInstance_)) {
+        if (!DescriptorHeapContainer::instance().create(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV, 5, true)) {
+            assert(false && "定数バッファ用ディスクリプタヒープの作成に失敗");
+            return false;
+        }
+        if (!DescriptorHeapContainer::instance().create(D3D12_DESCRIPTOR_HEAP_TYPE_DSV, 1)) {
+            assert(false && "デプスバッファ用ディスクリプタヒープの作成に失敗");
+            return false;
+        }
+        if (!renderTargetInstance_.createBackBuffer(swapChainInstance_)) {
             assert(false && "レンダーターゲットの作成に失敗しました");
             return false;
         }
 
-        if (!commandAllocatorInstance_[0].create(deviceInstance_, D3D12_COMMAND_LIST_TYPE_DIRECT)) {
+        if (!commandAllocatorInstance_[0].create( D3D12_COMMAND_LIST_TYPE_DIRECT)) {
             assert(false && "コマンドアロケータの作成に失敗しました");
             return false;
         }
-        if (!commandAllocatorInstance_[1].create(deviceInstance_, D3D12_COMMAND_LIST_TYPE_DIRECT)) {
+        if (!commandAllocatorInstance_[1].create(D3D12_COMMAND_LIST_TYPE_DIRECT)) {
             assert(false && "コマンドアロケータの作成に失敗しました");
             return false;
         }
 
-        if (!commandListInstance_.create(deviceInstance_, commandAllocatorInstance_[0])) {
+        if (!commandListInstance_.create( commandAllocatorInstance_[0])) {
             assert(false && "コマンドリストの作成に失敗しました");
             return false;
         }
 
-        if (!fenceInstance_.create(deviceInstance_)) {
+        if (!fenceInstance_.create()) {
             assert(false && "フェンスの作成に失敗しました");
             return false;
         }
 
-        if (!trianglePolygonInstance_.create(deviceInstance_)) {
-            assert(false && "三角形ポリゴンの作成に失敗しました");
-            return false;
-        }
-
-        if (!rootSignatureInstance_.create(deviceInstance_)) {
+        if (!rootSignatureInstance_.create()) {
             assert(false && "ルートシグネチャの作成に失敗しました");
             return false;
         }
 
-        if (!shaderInstance_.create(deviceInstance_)) {
+        if (!shaderInstance_.create()) {
             assert(false && "シェーダーの作成に失敗しました");
             return false;
         }
 
-        if (!piplineStateObjectInstance_.create(deviceInstance_, shaderInstance_, rootSignatureInstance_)) {
+        if (!piplineStateObjectInstance_.create( shaderInstance_, rootSignatureInstance_)) {
             assert(false && "パイプラインステートオブジェクトの作成に失敗しました");
             return false;
         }
@@ -98,7 +96,7 @@ public:
     }
 
     void loop() noexcept {
-        while (windowInstance_.messageLoop()) {
+        while (Window::instance().messageLoop()) {
 
             const auto backBufferIndex = swapChainInstance_.get()->GetCurrentBackBufferIndex();
 
@@ -113,7 +111,7 @@ public:
             auto pToRT = resourceBarrier(renderTargetInstance_.get(backBufferIndex), D3D12_RESOURCE_STATE_PRESENT, D3D12_RESOURCE_STATE_RENDER_TARGET);
             commandListInstance_.get()->ResourceBarrier(1, &pToRT);
 
-            D3D12_CPU_DESCRIPTOR_HANDLE handles[] = { renderTargetInstance_.getDescriptorHandle(deviceInstance_, descriptorHeapInstance_, backBufferIndex) };
+            D3D12_CPU_DESCRIPTOR_HANDLE handles[] = { renderTargetInstance_.getDescriptorHandle(backBufferIndex) };
             commandListInstance_.get()->OMSetRenderTargets(1, handles, false, nullptr);
 
             const float clearColor[] = { 0.2f, 0.2f, 0.2f, 1.0f };  // クリア
@@ -123,7 +121,7 @@ public:
 
             commandListInstance_.get()->SetGraphicsRootSignature(rootSignatureInstance_.get());
 
-            const auto [w, h] = windowInstance_.size();
+            const auto [w, h] =Window::instance().size();
             D3D12_VIEWPORT viewport{};
             viewport.TopLeftX = 0.0f;
             viewport.TopLeftY = 0.0f;
@@ -170,12 +168,8 @@ public:
         return barrier;
     }
 private:
-    Window           windowInstance_{};
-    DXGI             dxgiInstance_{};
-    Device           deviceInstance_{};
     CommandQueue     commandQueueInstance_{};
     SwapChain        swapChainInstance_{};
-    DescriptorHeap   descriptorHeapInstance_{};
     RenderTarget     renderTargetInstance_{};
     CommandAllocator commandAllocatorInstance_[2]{};
     CommandList      commandListInstance_{};

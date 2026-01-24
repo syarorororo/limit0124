@@ -1,19 +1,12 @@
 #include "command_allocator.h"
 #include <cassert>
 
-CommandAllocator::~CommandAllocator() {
 
-    if (commandAllocator_) {
-        commandAllocator_->Release();
-        commandAllocator_ = nullptr;
-    }
-}
-
-[[nodiscard]] bool CommandAllocator::create(const Device& device, const D3D12_COMMAND_LIST_TYPE type) noexcept {
+[[nodiscard]] bool CommandAllocator::create( const D3D12_COMMAND_LIST_TYPE type) noexcept {
 
     type_ = type;
 
-    const auto hr = device.get()->CreateCommandAllocator(type_, IID_PPV_ARGS(&commandAllocator_));
+    const auto hr = Device::instance().get()->CreateCommandAllocator(type_, IID_PPV_ARGS(&commandAllocator_));
     if (FAILED(hr)) {
         assert(false && "コマンドアロケータの作成に失敗しました");
         return false;
@@ -33,7 +26,7 @@ void CommandAllocator::reset() noexcept {
         assert(false && "コマンドアロケータが未作成です");
         return nullptr;
     }
-    return commandAllocator_;
+    return commandAllocator_.Get();
 }
 
 [[nodiscard]] D3D12_COMMAND_LIST_TYPE CommandAllocator::getType() const noexcept {

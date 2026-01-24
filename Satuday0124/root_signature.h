@@ -5,11 +5,11 @@ class RootSignature final {
 public:
 	RootSignature() = default;
 
-	~RootSignature();
-	[[nodiscard]] bool create(const Device& device)noexcept;
+	~RootSignature() = default;
+	[[nodiscard]] bool create()noexcept;
 
 	[[nodiscard]] ID3D12RootSignature* get() const noexcept;
 
 private:
-	ID3D12RootSignature* rootSignature_{};
+	Microsoft::WRL::ComPtr<ID3D12RootSignature>rootSignature_{};
 };

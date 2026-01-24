@@ -6,14 +6,14 @@ public:
 
     Fence() = default;
 
-    ~Fence();
+    ~Fence() = default;
 
-    [[nodiscard]] bool create(const Device& device) noexcept;
+    [[nodiscard]] bool create() noexcept;
 
     void wait(UINT64 fenceValue) const noexcept;
 
     [[nodiscard]] ID3D12Fence* get() const noexcept;
 private:
-    ID3D12Fence* fence_{};
+    Microsoft::WRL::ComPtr<ID3D12Fence>fence_{};
     HANDLE       waitGpuEvent_{};
 };

@@ -8,14 +8,14 @@ public:
 
     SwapChain() = default;
 
-    ~SwapChain();
+    ~SwapChain() = default;
 
-    [[nodiscard]] bool create(const DXGI& dxgi, const Window& window, const CommandQueue& commandQueue) noexcept;
+    [[nodiscard]] bool create(const CommandQueue& commandQueue) noexcept;
 
     [[nodiscard]] IDXGISwapChain3* get() const noexcept;
 
     [[nodiscard]] const DXGI_SWAP_CHAIN_DESC1& getDesc() const noexcept;
 private:
-    IDXGISwapChain3* swapChain_{};
-    DXGI_SWAP_CHAIN_DESC1 swapChainDesc_{};
+    Microsoft::WRL::ComPtr<IDXGISwapChain3>swapChain_{};
+        DXGI_SWAP_CHAIN_DESC1 swapChainDesc_{};
 };

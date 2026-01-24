@@ -1,15 +1,9 @@
 #include "command_queue.h"
 #include <cassert>
 
-CommandQueue::~CommandQueue() {
 
-    if (commandQueue_) {
-        commandQueue_->Release();
-        commandQueue_ = nullptr;
-    }
-}
 
-[[nodiscard]] bool CommandQueue::create(const Device& device) noexcept {
+[[nodiscard]] bool CommandQueue::create() noexcept {
 
     D3D12_COMMAND_QUEUE_DESC desc{};
     desc.Type = D3D12_COMMAND_LIST_TYPE_DIRECT;
@@ -17,7 +11,7 @@ CommandQueue::~CommandQueue() {
     desc.Flags = D3D12_COMMAND_QUEUE_FLAG_NONE;
     desc.NodeMask = 0;
 
-    const auto hr = device.get()->CreateCommandQueue(&desc, IID_PPV_ARGS(&commandQueue_));
+    const auto hr = Device::instance().get()->CreateCommandQueue(&desc, IID_PPV_ARGS(&commandQueue_));
     if (FAILED(hr)) {
         assert(false && "コマンドキューの作成に失敗");
         return false;
@@ -30,5 +24,5 @@ CommandQueue::~CommandQueue() {
         assert(false && "コマンドキューが未作成です");
         return nullptr;
     }
-    return commandQueue_;
+    return commandQueue_.Get();
 }

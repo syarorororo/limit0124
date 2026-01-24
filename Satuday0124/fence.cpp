@@ -1,17 +1,11 @@
 #include "fence.h"
 #include <cassert>
 
-Fence::~Fence() {
 
-	if (fence_) {
-		fence_->Release();
-		fence_ = nullptr;
-	}
-}
 
-[[nodiscard]] bool Fence::create(const Device& device) noexcept {
+[[nodiscard]] bool Fence::create() noexcept {
 
-	HRESULT hr = device.get()->CreateFence(0, D3D12_FENCE_FLAG_NONE, IID_PPV_ARGS(&fence_));
+	HRESULT hr = Device::instance().get()->CreateFence(0, D3D12_FENCE_FLAG_NONE, IID_PPV_ARGS(&fence_));
 	if (FAILED(hr)) {
 		assert(false && "フェンスの作成に失敗しました");
 		return false;
@@ -43,5 +37,5 @@ void Fence::wait(UINT64 fenceValue) const noexcept {
 		assert(false && "フェンスが未作成です");
 		return nullptr;
 	}
-	return fence_;
+	return fence_.Get();
 }

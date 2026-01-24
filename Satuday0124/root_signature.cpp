@@ -1,16 +1,7 @@
 #include"root_signature.h"
 #include<cassert>
 
-RootSignature::~RootSignature()
-{
-	if (rootSignature_) {
-		rootSignature_->Release();
-		rootSignature_ = nullptr;
-	}
-
-
-}
-[[nodiscard]] bool RootSignature::create(const Device& device) noexcept {
+[[nodiscard]] bool RootSignature::create() noexcept {
 	D3D12_ROOT_SIGNATURE_DESC rootSignatureDesc{};
 	rootSignatureDesc.NumParameters = 0;
 	rootSignatureDesc.pParameters = nullptr;
@@ -31,7 +22,7 @@ RootSignature::~RootSignature()
 
 	}
 	else {
-		res = device.get()->CreateRootSignature(
+		res = Device::instance().get()->CreateRootSignature(
 			0,
 			signature->GetBufferPointer(),
 			signature->GetBufferSize(),
@@ -57,6 +48,6 @@ RootSignature::~RootSignature()
 		assert(false && "ルートシグネチャが生成されていません");
 
 	}
-	return rootSignature_;
+	return rootSignature_.Get();
 
 }

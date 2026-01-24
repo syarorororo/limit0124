@@ -1,27 +1,23 @@
 #include "render_target.h"
 #include <cassert>
 
-RenderTarget::~RenderTarget() {
+namespace {
+    constexpr auto heapType_ = D3D12_DESCRIPTOR_HEAP_TYPE_RTV;
+}
 
-    for (auto& rt : renderTargets_) {
-        if (rt) {
-            rt->Release();
-            rt = nullptr;
-        }
-    }
+RenderTarget::~RenderTarget() {
     renderTargets_.clear();
 }
 
-[[nodiscard]] bool RenderTarget::createBackBuffer(const Device& device, const SwapChain& swapChain, const DescriptorHeap& heap) noexcept {
+[[nodiscard]] bool RenderTarget::createBackBuffer(const SwapChain& swapChain) noexcept {
 
     const auto& desc = swapChain.getDesc();
 
     renderTargets_.resize(desc.BufferCount);
 
-    auto handle = heap.get()->GetCPUDescriptorHandleForHeapStart();
+    auto heap = DescriptorHeapContainer::instance().get(heapType_);
 
-    auto heapType = heap.getType();
-    assert(heapType == D3D12_DESCRIPTOR_HEAP_TYPE_RTV && "ディスクリプタヒープのタイプが RTV ではありません");
+    auto handle = heap->GetCPUDescriptorHandleForHeapStart();
 
     for (uint8_t i = 0; i < desc.BufferCount; ++i) {
         const auto hr = swapChain.get()->GetBuffer(i, IID_PPV_ARGS(&renderTargets_[i]));
@@ -30,25 +26,23 @@ RenderTarget::~RenderTarget() {
             return false;
         }
 
-        device.get()->CreateRenderTargetView(renderTargets_[i], nullptr, handle);
+        Device::instance().get()->CreateRenderTargetView(renderTargets_[i].Get(), nullptr, handle);
 
-        handle.ptr += device.get()->GetDescriptorHandleIncrementSize(heapType);
+        handle.ptr += Device::instance().get()->GetDescriptorHandleIncrementSize(heapType_);
     }
     return true;
 }
 
-[[nodiscard]] D3D12_CPU_DESCRIPTOR_HANDLE RenderTarget::getDescriptorHandle(const Device& device, const DescriptorHeap& heap, UINT index) const noexcept {
+[[nodiscard]] D3D12_CPU_DESCRIPTOR_HANDLE RenderTarget::getDescriptorHandle(UINT index) const noexcept {
     if (index >= renderTargets_.size() || !renderTargets_[index]) {
         assert(false && "不正なレンダーターゲットです");
     }
 
-    auto handle = heap.get()->GetCPUDescriptorHandleForHeapStart();
+    auto heap = DescriptorHeapContainer::instance().get(heapType_);;
 
-    auto heapType = heap.getType();
-    assert(heapType == D3D12_DESCRIPTOR_HEAP_TYPE_RTV && "ディスクリプタヒープのタイプが RTV ではありません");
+    auto handle = heap->GetCPUDescriptorHandleForHeapStart();
 
-
-    handle.ptr += index * device.get()->GetDescriptorHandleIncrementSize(heapType);
+    handle.ptr += index * Device::instance().get()->GetDescriptorHandleIncrementSize(heapType_);
     return handle;
 }
 
@@ -57,5 +51,5 @@ RenderTarget::~RenderTarget() {
         assert(false && "不正なレンダーターゲットです");
         return nullptr;
     }
-    return renderTargets_[index];
+    return renderTargets_[index].Get();
 }

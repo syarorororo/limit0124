@@ -113,9 +113,6 @@
     <ClInclude Include="triangle_polygon.h">
       <Filter>draw_resource</Filter>
     </ClInclude>
-    <ClInclude Include="entry.h">
-      <Filter>entry</Filter>
-    </ClInclude>
     <ClInclude Include="constant_buffer.h">
       <Filter>directx</Filter>
     </ClInclude>
@@ -128,9 +125,6 @@
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="shader.hlsl">
-      <Filter>directx</Filter>
-    </FxCompile>
-    <FxCompile Include="VertexShader.hlsl">
       <Filter>directx</Filter>
     </FxCompile>
   </ItemGroup>

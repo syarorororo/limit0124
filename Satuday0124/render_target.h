@@ -11,12 +11,13 @@ public:
 
     ~RenderTarget();
 
-    [[nodiscard]] bool createBackBuffer(const Device& device, const SwapChain& swapChain, const DescriptorHeap& heap) noexcept;
+    [[nodiscard]] bool createBackBuffer(const SwapChain& swapChain) noexcept;
 
-    [[nodiscard]] D3D12_CPU_DESCRIPTOR_HANDLE getDescriptorHandle(const Device& device, const DescriptorHeap& heap, UINT index) const noexcept;
+    [[nodiscard]] D3D12_CPU_DESCRIPTOR_HANDLE getDescriptorHandle(UINT index) const noexcept;
 
-    [[nodiscard]] ID3D12Resource* get(uint32_t index) const noexcept;
+    [[nodiscard]] ID3D12Resource* get(UINT index) const noexcept;
 
 private:
-    std::vector<ID3D12Resource*> renderTargets_;
+   
+    std::vector< Microsoft::WRL::ComPtr<ID3D12Resource>> renderTargets_{};
 };

@@ -6,9 +6,9 @@ public:
 
     CommandAllocator() = default;
 
-    ~CommandAllocator();
+    ~CommandAllocator() = default;
 
-    [[nodiscard]] bool create(const Device& device, const D3D12_COMMAND_LIST_TYPE type) noexcept;
+    [[nodiscard]] bool create( const D3D12_COMMAND_LIST_TYPE type) noexcept;
 
     void reset() noexcept;
 
@@ -16,6 +16,6 @@ public:
 
     [[nodiscard]] D3D12_COMMAND_LIST_TYPE getType() const noexcept;
 private:
-    ID3D12CommandAllocator* commandAllocator_{};
+    Microsoft::WRL::ComPtr<ID3D12CommandAllocator>commandAllocator_{};
     D3D12_COMMAND_LIST_TYPE type_{};
 };

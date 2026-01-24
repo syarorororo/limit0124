@@ -1,16 +1,11 @@
 #include "swap_chain.h"
 #include <cassert>
 
-SwapChain::~SwapChain() {
-    if (swapChain_) {
-        swapChain_->Release();
-        swapChain_ = nullptr;
-    }
-}
 
-[[nodiscard]] bool SwapChain::create(const DXGI& dxgi, const Window& window, const CommandQueue& commandQueue) noexcept {
 
-    const auto [w, h] = window.size();
+[[nodiscard]] bool SwapChain::create(const CommandQueue& commandQueue) noexcept {
+
+    const auto [w, h] = Window::instance().size();
     swapChainDesc_ = {};
     swapChainDesc_.BufferCount = 2;
     swapChainDesc_.Width = w;
@@ -20,9 +15,10 @@ SwapChain::~SwapChain() {
     swapChainDesc_.SwapEffect = DXGI_SWAP_EFFECT_FLIP_DISCARD;
     swapChainDesc_.SampleDesc.Count = 1;
 
-    IDXGISwapChain1* tempSwapChain{};
+    Microsoft::WRL::ComPtr<IDXGISwapChain1>tempSwapChain{}; 
     {
-        const auto hr = dxgi.factory()->CreateSwapChainForHwnd(commandQueue.get(), window.handle(),
+        const auto hr = Device::instance().dxgi().factory()->CreateSwapChainForHwnd(commandQueue.get(), 
+            Window::instance().handle(),
             &swapChainDesc_, nullptr, nullptr, &tempSwapChain);
         if (FAILED(hr)) {
             assert(false && "スワップチェインの作成に失敗");
@@ -48,7 +44,7 @@ SwapChain::~SwapChain() {
         assert(false && "スワップチェインが未作成です");
         return nullptr;
     }
-    return swapChain_;
+    return swapChain_.Get();
 }
 
 [[nodiscard]] const DXGI_SWAP_CHAIN_DESC1& SwapChain::getDesc() const noexcept {
