@@ -19,7 +19,7 @@ RenderTarget::~RenderTarget() {
 
     auto handle = heap->GetCPUDescriptorHandleForHeapStart();
 
-    for (uint8_t i = 0; i < desc.BufferCount; ++i) {
+    for (uint8_t i = 0; i < desc.BufferCount; i++) {
         const auto hr = swapChain.get()->GetBuffer(i, IID_PPV_ARGS(&renderTargets_[i]));
         if (FAILED(hr)) {
             assert(false && "バックバッファの取得に失敗しました");

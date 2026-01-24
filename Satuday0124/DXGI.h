@@ -9,7 +9,7 @@ public:
 
     DXGI() = default;
 
-    ~DXGI();
+    ~DXGI() = default;
 
     [[nodiscard]] bool setDisplayAdapter() noexcept;
 
@@ -17,6 +17,7 @@ public:
 
     [[nodiscard]] IDXGIAdapter1* displayAdapter() const noexcept;
 private:
-    IDXGIFactory4* dxgiFactory_{};
-    IDXGIAdapter1* dxgiAdapter_{};
+    
+    Microsoft::WRL::ComPtr<IDXGIFactory4> dxgiFactory_{};
+    Microsoft::WRL::ComPtr<IDXGIAdapter1> dxgiAdapter_{};
 };

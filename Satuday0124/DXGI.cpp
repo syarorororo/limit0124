@@ -2,18 +2,6 @@
 #include <cassert>
 #pragma comment(lib, "dxgi.lib")
 
-DXGI::~DXGI() {
-
-	if (dxgiFactory_) {
-		dxgiFactory_->Release();
-		dxgiFactory_ = nullptr;
-	}
-
-	if (dxgiAdapter_) {
-		dxgiAdapter_->Release();
-		dxgiAdapter_ = nullptr;
-	}
-}
 
 [[nodiscard]] bool DXGI::setDisplayAdapter() noexcept {
 #if _DEBUG
@@ -70,12 +58,12 @@ DXGI::~DXGI() {
 	if (!dxgiFactory_) {
 		assert(false && "DXGIファクトリーが未作成です");
 	}
-	return dxgiFactory_;
+	return dxgiFactory_.Get();
 }
 
 [[nodiscard]] IDXGIAdapter1* DXGI::displayAdapter() const noexcept {
 	if (!dxgiAdapter_) {
 		assert(false && "ディスプレイアダプターが未作成です");
 	}
-	return dxgiAdapter_;
+	return dxgiAdapter_.Get();
 }
