@@ -1,4 +1,6 @@
 #include "swap_chain.h"
+#include"DXGI.h"
+#include"window.h"
 #include <cassert>
 
 
@@ -15,11 +17,11 @@
     swapChainDesc_.SwapEffect = DXGI_SWAP_EFFECT_FLIP_DISCARD;
     swapChainDesc_.SampleDesc.Count = 1;
 
-    Microsoft::WRL::ComPtr<IDXGISwapChain1>tempSwapChain{}; 
+    Microsoft::WRL::ComPtr<IDXGISwapChain1> tempSwapChain{}; 
     {
         const auto hr = Device::instance().dxgi().factory()->CreateSwapChainForHwnd(commandQueue.get(), 
             Window::instance().handle(),
-            &swapChainDesc_, nullptr, nullptr, &tempSwapChain);
+            &swapChainDesc_, nullptr, nullptr, tempSwapChain.GetAddressOf());
         if (FAILED(hr)) {
             assert(false && "スワップチェインの作成に失敗");
             return false;
@@ -30,8 +32,8 @@
 
         const auto hr = tempSwapChain->QueryInterface(IID_PPV_ARGS(&swapChain_));
 
-        tempSwapChain->Release();
         if (FAILED(hr)) {
+            tempSwapChain->Release();
             assert(false && "スワップチェインのアップグレードに失敗");
             return false;
         }

@@ -69,6 +69,15 @@
     <ClCompile Include="depth_buffer.cpp">
       <Filter>directx</Filter>
     </ClCompile>
+    <ClCompile Include="quad_polygon.cpp">
+      <Filter>draw_resource</Filter>
+    </ClCompile>
+    <ClCompile Include="shape_container.cpp">
+      <Filter>draw_resource</Filter>
+    </ClCompile>
+    <ClCompile Include="shape.cpp">
+      <Filter>draw_resource</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="window.h">
@@ -121,6 +130,15 @@
     </ClInclude>
     <ClInclude Include="util.h">
       <Filter>directx</Filter>
+    </ClInclude>
+    <ClInclude Include="quad_polygon.h">
+      <Filter>draw_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="shape_container.h">
+      <Filter>draw_resource</Filter>
+    </ClInclude>
+    <ClInclude Include="shape.h">
+      <Filter>draw_resource</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
